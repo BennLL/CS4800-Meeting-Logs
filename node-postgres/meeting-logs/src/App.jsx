@@ -7,7 +7,12 @@ function App() {
   const [notes, setNotes] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/getListNotes') // Corrected route
+    fetch('https://cs4800backend.vercel.app/getListNotes',{
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }) 
       .then(res => res.json())
       .then(data => {
         setNotes(data);
@@ -18,7 +23,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:3001/createNotes', { // Corrected POST route
+    fetch('https://cs4800backend.vercel.app/createNotes', { 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +32,7 @@ function App() {
     })
       .then(res => res.json())
       .then(data => {
-        setNotes([...notes, data]); // Update list with new note
+        setNotes([...notes, data]); 
         setDate('');
         setContent('');
         window.location.reload();
@@ -36,7 +41,7 @@ function App() {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:3001/deleteNotes/${id}`, { // Corrected DELETE route
+    fetch(`https://cs4800backend.vercel.app/deleteNotes/${id}`, { 
       method: 'DELETE',
     })
       .then(res => {

@@ -63,7 +63,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: 'https://main.de3msy9dxdadw.amplifyapp.com/', methods: ['GET', 'POST', 'DELETE'] }));
 
 app.use(express.json());
 
@@ -71,9 +71,11 @@ app.get('/getListNotes', getListNotes);
 app.delete('/deleteNotes/:id', deleteNotes);
 app.post('/createNotes', createNotes);
 
-app.listen(3001, () => {
-    console.log('Server is running on port 3001');
-});
+module.exports = app;
+
+// app.listen(3001, () => {
+//     console.log('Server is running on port 3001');
+// });
 
 
 // setup data base on neon
