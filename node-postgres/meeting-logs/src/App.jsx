@@ -81,7 +81,7 @@ function App() {
       </div>
 
       <div className="saved-notes">
-        <h2>Saved Notes:</h2>
+        <h2>Saved:</h2>
         <ul>
           {notes.map((note,) => (
             <li key={note.id}>
