@@ -1,16 +1,58 @@
 /* General Styles */
 body {
-  background-color: #121212;
-  /* Dark background */
+  background-color: #272626;
   color: white;
-  /* White text */
   font-family: 'Arial', sans-serif;
-  display: flex;
-  justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
+
+/* Navbar */
+.Navbar {
+  border-color: #6200ea;
+  align-items: center;
+  width: 100%;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+}
+
+.Navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-end;
+  margin: 0 0.5rem;
+}
+
+.Navbar li a {
+  color: white;
+  background-color: #6200ea;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px; 
+}
+
+.Navbar li :hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.navbar-logo {
+  margin-right: auto;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 3rem;
+}
+
+/* Home page */
+.Home {
+  background-color: white;
+}
+
+/* About page */
 
 /* App Container */
 .App {
