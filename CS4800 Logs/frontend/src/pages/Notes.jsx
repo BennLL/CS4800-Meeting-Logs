@@ -56,6 +56,7 @@ function Notes() {
   
     return (
       <>
+      <div className='notes-container'>
         <div className="App">
           <h1>Write a note</h1>
           <form onSubmit={handleSubmit}>
@@ -96,6 +97,7 @@ function Notes() {
             ))}
           </ul>
         </div>
+      </div>
       </>
     );
   }

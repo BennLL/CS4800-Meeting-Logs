@@ -1,3 +1,5 @@
+import homeImage from '../assets/images/homeImage.jpg';
+
 function Home() {
   return (
     <div className="Home">
@@ -5,13 +7,13 @@ function Home() {
       
       <div className="home-container">
         <img 
-          src="/path-to-your-image.jpg" 
-          alt="Nameless Company" 
+          src={homeImage}
+          alt="./images/homepage-image.jpg"
           className="home-image"
         />
         <div className="home-content">
           <p>
-          Nameless offers a revolutionary streaming platform that brings cinema directly to your screen. 
+          Nameless offers a <span>revolutionary streaming platform</span> that brings cinema directly to your screen. 
           Our curated collection combines timeless classics with cutting-edge new releases, 
           offering a seamless and immersive viewing experience for every movie enthusiast.
           </p>
@@ -19,7 +21,7 @@ function Home() {
           <p>
           Whether you&apos;re a casual viewer or a dedicated movie lover, 
           Nameless provides the perfect space to discover, explore, and experience the magic of film. 
-          With our powerful recommendations, finding your next favorite movie has never been easier.
+          With <span>our powerful recommendations</span>, finding your next favorite movie has never been easier.
           </p>
         </div>
       </div>
