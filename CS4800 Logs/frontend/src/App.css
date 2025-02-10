@@ -124,6 +124,13 @@ body {
   margin-bottom: 2rem;
 }
 
+.signatures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /* App Container */
 .App {
   width: 500px;
