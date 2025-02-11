@@ -1,15 +1,134 @@
 /* General Styles */
 body {
-  background-color: #121212;
-  /* Dark background */
+  background: black;
   color: white;
-  /* White text */
   font-family: 'Arial', sans-serif;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+
+/* Navbar */
+.Navbar {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background-color: #222;
+}
+
+.navbar-container {
+  display: flex;
+  padding: 0;
+  margin: 0rem 3rem;
+  gap: 3rem;
+  font-size: larger;
+}
+
+.navbar-logo {
+  margin-right: auto;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.Navbar a {
+  color: white;
+  font-size: large;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.Navbar a:hover {
+  background-color: #6200ea;
+}
+
+/* Home page */
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+ }
+ 
+ .home-title {
+  font-size: xxx-large;
+  margin-bottom: 3rem;
+ }
+ 
+ .home-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  max-width: 65rem;
+  margin: 2rem 0;
+ }
+ 
+ .home-image {
+  width: 25rem;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3); 
+ }
+ 
+ .home-content {
+  flex: 1;
+  line-height: 2;
+  font-size: large;
+ }
+ 
+ .home-content p {
+  color: white;
+ }
+
+ .about-content span,
+ .home-content span{
+  background-color: #6200ea;
+  border-radius: 2px;
+  padding: 2px;
+ }
+ 
+ .copyright-message {
+  font-size: small;
+  font-style: italic;
+  font-weight: 100;
+  margin-bottom: auto;
+  position: fixed;
+  bottom: 1.5rem;
+ }
+
+/* About page */
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.about-content{
+  font-size: large;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.about-content p {
+  margin-bottom: 2rem;
+}
+
+.signatures {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 20px;
+  width: 100%;
 }
 
 /* App Container */
@@ -29,6 +148,16 @@ body {
 .App>form>label>textarea {
   width: 95%;
   height: 300px;
+}
+
+/* Notes stuff */
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
 }
 
 /* Title */
