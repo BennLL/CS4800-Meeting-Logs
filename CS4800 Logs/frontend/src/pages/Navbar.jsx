@@ -8,7 +8,7 @@ function Navbar() {
           <div className="navbar-links">
             <Link to="/about">ABOUT US</Link>
             <Link to="/notes">NOTES</Link>
-            <a href="https://github.com/alimomennasab/CS4800-Group-Project" target="_blank" rel="noopener noreferrer">OUR PRODUCT</a>
+            <a href="https://github.com/ethan-ngo/CS4800-Netflix" target="_blank" rel="noopener noreferrer">OUR PRODUCT</a>
           </div>
         </div>
       </nav>
